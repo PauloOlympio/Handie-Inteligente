@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Inteligente - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Biblioteca de gráficos -->
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Espaço para logo -->
+        <div class="logo-container">
+            <!-- Substitua 'logo.png' pelo caminho da sua logo -->
+            <img src="logo.jpeg" alt="Logo da Empresa" class="logo">
+        </div>
+        
+        <h2>Handie</h2>
+        <ul>
+            <li><a href="#">Painel Principal</a></li>
+            <li><a href="#">Produtividade</a></li>
+            <li><a href="#">Bem-estar</a></li>
+            <li><a href="#">Notificações</a></li>
+            <li><a href="#">Configurações</a></li>
+        </ul>
+        <button id="toggle-theme">Modo Claro/Escuro</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">Dashboard - Agenda Inteligente</div>
+        
+        <!-- Cartões de Informações -->
+        <div class="cards">
+            <div class="card">
+                <h3>Compromissos</h3>
+                <p>Visualize todos os compromissos agendados.</p>
+                <button>Ver Detalhes</button>
+            </div>
+            <div class="card">
+                <h3>Produtividade</h3>
+                <p>Análise do tempo e otimização.</p>
+                <button>Ver Relatório</button>
+            </div>
+            <div class="card">
+                <h3>Bem-estar</h3>
+                <p>Recomendações de saúde personalizadas.</p>
+                <button>Ver Sugestões</button>
+            </div>
+            <div class="card">
+                <h3>Alertas</h3>
+                <p>Evite conflitos de agenda e estresse.</p>
+                <button>Ver Alertas</button>
+            </div>
+        </div>
+
+        <!-- Gráficos -->
+        <div class="graphs">
+            <div class="graph-card">
+                <h3>Produtividade Semanal</h3>
+                <canvas id="productivityChart"></canvas>
+            </div>
+            <div class="graph-card">
+                <h3>Estresse Diário</h3>
+                <canvas id="stressChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
